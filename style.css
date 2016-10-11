@@ -47,8 +47,10 @@ h2 {
     margin-left:5%;
     margin-right:5%;
     width:40%;
-    height: 450px;
-    margin-top: 100px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,6 +65,7 @@ h2 {
  #sidebar {
      width: 90%;
      float: none;
+     /*background: url("images/georgia.jpg");*/
  }
 }
 
@@ -71,15 +74,23 @@ nav {
 }
 
 a {
-   color:rgb(117,95,94)
+  color:rgb(249,158,130);
+  opacity: .8;
 }
 
 a:hover{
-   color:rgb(249,158,130)
+   color:rgb(249,158,130);
+   opacity: 1;
 }
 
 a:link {
     text-decoration: none;
+}
+
+.light {
+  opacity: .2;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .clearfix:before,
