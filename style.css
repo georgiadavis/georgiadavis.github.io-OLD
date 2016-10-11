@@ -8,6 +8,11 @@ body {
     color:rgb(117,95,94);
 }
 
+pre {
+  font-family:"Merriweather", serif;
+  color:rgb(117,95,94);
+}
+
 #background-pic {
 
   width:50%;
