@@ -8,27 +8,13 @@ body {
     color:rgb(117,95,94);
 }
 
-#background-pic h2{ 
-    font-size: 20pt;
-    color: rgb(252,233,233);
-    text-align: center;
-    background-color: aqua;
-    line-height: 0;
-    margin-top:0;
-    position:relative;
-    top:200px;
-    font-weight: 300;
-}
-
 #background-pic {
-  background: url("images/georgia.jpg");
-  background-size: cover;
-  background-position: center;
-  width:100%;
+
+  width:50%;
   height: 600px;
   margin: 0;
   background-repeat: no-repeat;
-    
+
 }
 
 /*container for columns*/
@@ -45,14 +31,14 @@ h2 {
 }
 
 #main {
-    background:white;
-    float:left;
-    width:40%;
-    margin-left:5%;
-    margin-right:5%;
-    margin-top: 40px;
-    line-height: 1.5em;
-
+    background: url("images/georgia.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    width:50%;
 }
 
 #sidebar {
@@ -62,63 +48,42 @@ h2 {
     margin-right:5%;
     width:40%;
     height: 450px;
-    margin-top: 25px;
+    margin-top: 115px;
 }
 
 @media(max-width:700px){
  #main {
      width: 100%;
      float:none;
- }    
+ }
  #sidebar {
      width: 100%;
-     float: none; 
+     float: none;
  }
 }
 
-/*Navigation styling*/
-
-.nav-box {
-    background:rgb(249,158,130);
-    width:25%;
-    float: left;
-    height:150px;
-    padding-top: 50px;
-    
-}
-
-.nav-box img {
-    display:block;
-    width:75px;
-    margin:0 auto 15px auto;
-}
-
 nav {
-    clear:both;    
+    clear:both;
 }
 
 a {
-    text-align: center;
-    display: block;
-    color: black;
-    opacity: 0.5;
+   color:rgb(117,95,94)
+}
+
+a:hover{
+   color:rgb(249,158,130)
 }
 
 a:link {
     text-decoration: none;
 }
 
-.nav-box:hover { 
-    background-color: rgb(225,145,125);
-}
-
 .clearfix:before,
 .clearfix:after {
-    content: " "; 
-    display: table; 
+    content: " ";
+    display: table;
 }
 
 .clearfix:after {
     clear: both;
 }
-
