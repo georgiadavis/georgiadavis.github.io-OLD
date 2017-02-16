@@ -35,39 +35,39 @@ h2 {
     color:rgb(249,158,130);
 }
 
-#main {
+.main {
     background: url("images/georgia.jpg");
     background-size: cover;
     background-position: center;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    top: 0;
     width:50%;
+    height: 100vh;
 }
 
-#sidebar {
+.sidebar {
     background:white;
-    float:right;
     margin-left:5%;
     margin-right:5%;
     width:40%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
 
 @media(max-width:700px){
- #main {
+ .main {
      width: 0%;
-     float:none;
  }
- #sidebar {
+ .sidebar {
      width: 90%;
      float: none;
      /*background: url("images/georgia.jpg");*/
